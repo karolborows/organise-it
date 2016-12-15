@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
     <link rel="stylesheet" href="bower_components/leaflet-search/dist/leaflet-search.src.css">
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css">
     <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css">
     <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css">
     <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.css">
+    <link rel="stylesheet" href="bower_components/angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.css">
     <!-- endinject -->
     <!-- endbuild -->
     <!-- build:css content/css/main.css -->
@@ -26,7 +28,6 @@
     <!--[if lt IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <page-ribbon></page-ribbon>
     <div ui-view="navbar" ng-cloak></div>
     <div class="container">
         <div class="well" ui-view="content">
@@ -34,7 +35,6 @@
         </div>
 
         <div class="footer" ng-cloak>
-            <p data-translate="footer">This is your footer</p>
         </div>
     </div>
 
@@ -57,6 +57,8 @@
     <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
     <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
     <script src="bower_components/leaflet-search/dist/leaflet-search.src.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/fullcalendar/dist/fullcalendar.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-aria/angular-aria.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
@@ -78,6 +80,8 @@
     <script src="bower_components/bootstrap-material-design/dist/js/material.js"></script>
     <script src="bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
     <script src="bower_components/angular-simple-logger/dist/angular-simple-logger.js"></script>
+    <script src="bower_components/angular-bootstrap-calendar/dist/js/angular-bootstrap-calendar-tpls.js"></script>
+    <script src="bower_components/angular-ui-calendar/src/calendar.js"></script>
     <script src="bower_components/ui-leaflet/dist/ui-leaflet.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
@@ -107,7 +111,19 @@
     <script src="app/layouts/error/error.state.js"></script>
     <script src="app/home/home.state.js"></script>
     <script src="app/home/home.controller.js"></script>
+    <script src="app/entities/note/note-dialog.controller.js"></script>
+    <script src="app/entities/note/note-detail.controller.js"></script>
+    <script src="app/entities/note/note-delete-dialog.controller.js"></script>
+    <script src="app/entities/note/note.state.js"></script>
+    <script src="app/entities/note/note.service.js"></script>
+    <script src="app/entities/note/note.controller.js"></script>
     <script src="app/entities/entity.state.js"></script>
+    <script src="app/entities/calendar-event/calendar-event-dialog.controller.js"></script>
+    <script src="app/entities/calendar-event/calendar-event-detail.controller.js"></script>
+    <script src="app/entities/calendar-event/calendar-event-delete-dialog.controller.js"></script>
+    <script src="app/entities/calendar-event/calendar-event.state.js"></script>
+    <script src="app/entities/calendar-event/calendar-event.service.js"></script>
+    <script src="app/entities/calendar-event/calendar-event.controller.js"></script>
     <script src="app/components/util/truncate-words.filter.js"></script>
     <script src="app/components/util/truncate-characters.filter.js"></script>
     <script src="app/components/util/sort-by.directive.js"></script>
@@ -129,9 +145,14 @@
     <script src="app/components/form/pagination.constants.js"></script>
     <script src="app/components/form/minbytes.directive.js"></script>
     <script src="app/components/form/maxbytes.directive.js"></script>
+    <script src="app/components/calculator/calculator.factory.js"></script>
+    <script src="app/components/calculator/calculator.directive.js"></script>
+    <script src="app/components/calculator/calculator.controller.js"></script>
     <script src="app/components/alert/alert-error.directive.js"></script>
     <script src="app/components/alert/alert.service.js"></script>
     <script src="app/components/alert/alert.directive.js"></script>
+    <script src="app/calendar/calendar.state.js"></script>
+    <script src="app/calendar/calendar.controller.js"></script>
     <script src="app/blocks/interceptor/notification.interceptor.js"></script>
     <script src="app/blocks/interceptor/errorhandler.interceptor.js"></script>
     <script src="app/blocks/interceptor/auth-expired.interceptor.js"></script>

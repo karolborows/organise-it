@@ -73,7 +73,7 @@ Logo styles
 }
 
 .logo .logo-img {
-    height: 45px;
+    height: 50px;
     display: inline-block;
 }
 
@@ -99,9 +99,9 @@ Main page styles
 
 .hipster {
     display: inline-block;
-    width: 347px;
-    height: 497px;
-    background: url("../images/hipster.png") no-repeat center top;
+    width: 270px;
+    height: 350px;
+    background: url("../images/logo2x.png") no-repeat center top;
     background-size: contain;
 }
 

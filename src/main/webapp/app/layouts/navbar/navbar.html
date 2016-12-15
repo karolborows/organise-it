@@ -8,8 +8,8 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand logo" href="#/" ng-click="vm.collapseNavbar()">
-                <img class="logo-img" src="content/images/logo-jhipster.png"/>
-                <span data-translate="global.title">OrganiseIt</span> <span class="navbar-version">v{{VERSION}}</span>
+                <img class="logo-img" src="content/images/navbarLogo.png"/>
+                <span data-translate=""></span> <span class="navbar-version">{{VERSION}}</span>
             </a>
         </div>
         <div class="navbar-collapse" uib-collapse="vm.isNavbarCollapsed" ng-switch="vm.isAuthenticated()">
@@ -20,12 +20,12 @@
                         <span class="hidden-sm" data-translate="global.menu.home">Home</span>
                     </a>
                 </li>
-                <li ui-sref-active="active">
-                            <a ui-sref="leaflet-maps" ng-click="vm.collapseNavbar()">
-                                <span class="glyphicon glyphicon-globe"></span>&nbsp;
-                                <span >Leaflet Maps</span>
-                            </a>
-                        </li>
+           <!--     <li ng-class="{active: vm.$state.includes('calendar')}" ng-switch-when="true" ui-sref-active="active">
+                    <a ui-sref="calendar" ng-click="vm.collapseNavbar()">
+                        <span class="glyphicon glyphicon-globe"></span>&nbsp;
+                        <span >Calendar</span>
+                    </a>
+                </li>-->
                 <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->
                 <li ng-class="{active: vm.$state.includes('entity')}" ng-switch-when="true" uib-dropdown dropdown>
                     <a class="dropdown-toggle" uib-dropdown-toggle href="" id="entity-menu">
@@ -38,6 +38,24 @@
                         </span>
                     </a>
                     <ul class="dropdown-menu" uib-dropdown-menu>
+                        <li ui-sref-active="active">
+                            <a ui-sref="note" ng-click="vm.collapseNavbar()">
+                                <span class="glyphicon glyphicon-asterisk"></span>&nbsp;
+                                <span data-translate="global.menu.entities.note">Note</span>
+                            </a>
+                        </li>
+                        <li ui-sref-active="active">
+                            <a ui-sref="calendar-event" ng-click="vm.collapseNavbar()">
+                                <span class="glyphicon glyphicon-asterisk"></span>&nbsp;
+                                <span data-translate="global.menu.entities.calendarEvent">Calendar Event</span>
+                            </a>
+                        </li>
+                        <li ui-sref-active="active">
+                            <a ui-sref="leaflet-maps" ng-click="vm.collapseNavbar()">
+                                <span class="glyphicon glyphicon-globe"></span>&nbsp;
+                                <span >Leaflet Maps</span>
+                            </a>
+                        </li>
                         <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
                     </ul>
                 </li>

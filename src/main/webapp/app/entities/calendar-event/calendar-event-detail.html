@@ -1,0 +1,39 @@
+
+<div>
+    <h2><span data-translate="organiseItApp.calendarEvent.detail.title">Calendar Event</span> {{vm.calendarEvent.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="organiseItApp.calendarEvent.title">Title</span></dt>
+        <dd>
+            <span>{{vm.calendarEvent.title}}</span>
+        </dd>
+        <dt><span data-translate="organiseItApp.calendarEvent.start">Start</span></dt>
+        <dd>
+            <span>{{vm.calendarEvent.start | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="organiseItApp.calendarEvent.end">End</span></dt>
+        <dd>
+            <span>{{vm.calendarEvent.end | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="organiseItApp.calendarEvent.description">Description</span></dt>
+        <dd>
+            <span>{{vm.calendarEvent.description}}</span>
+        </dd>
+        <dt><span data-translate="organiseItApp.calendarEvent.owner">Owner</span></dt>
+        <dd>
+            {{vm.calendarEvent.owner.login}}
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="calendar-event-detail.edit({id:vm.calendarEvent.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

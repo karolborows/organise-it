@@ -1,0 +1,23 @@
+{
+    "organiseItApp": {
+        "note" : {
+            "home": {
+                "title": "Notes",
+                "createLabel": "Dodaj Note",
+                "createOrEditLabel": "Dodaj lub edytuj: Note",
+                "search": "Search for Note"
+            },
+            "created": "A new Note is created with identifier {{ param }}",
+            "updated": "A Note is updated with identifier {{ param }}",
+            "deleted": "A Note is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Note {{ id }}?"
+            },
+            "detail": {
+                "title": "Note"
+            },
+            "content": "Content",
+            "owner": "Owner"
+        }
+    }
+}

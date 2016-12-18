@@ -16,7 +16,7 @@
         var d = date.getDate();
         var m = date.getMonth();
         var y = date.getFullYear();
-
+ 
         console.log($scope.calendarEvents);
 
         function loadAll() {

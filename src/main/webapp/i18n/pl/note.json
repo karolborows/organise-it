@@ -2,21 +2,21 @@
     "organiseItApp": {
         "note" : {
             "home": {
-                "title": "Notes",
-                "createLabel": "Dodaj Note",
-                "createOrEditLabel": "Dodaj lub edytuj: Note",
-                "search": "Search for Note"
+                "title": "Notatki",
+                "createLabel": "Dodaj notatkę",
+                "createOrEditLabel": "Dodaj lub edytuj notatkę",
+                "search": "Znajdź notatkę"
             },
-            "created": "A new Note is created with identifier {{ param }}",
-            "updated": "A Note is updated with identifier {{ param }}",
-            "deleted": "A Note is deleted with identifier {{ param }}",
+            "created": "Utworzono nową notatkę o identyfikatorze {{ param }}",
+            "updated": "Zaktualizowano notatkę o identyfikatorze {{ param }}",
+            "deleted": "Usunięto notatkę o identyfikatorze {{ param }}",
             "delete": {
-                "question": "Czy na pewno chcesz usunąć Note {{ id }}?"
+                "question": "Czy na pewno chcesz usunąć notatkę?"
             },
             "detail": {
-                "title": "Note"
+                "title": "Notatka"
             },
-            "content": "Content",
+            "content": "Treść",
             "owner": "Owner"
         }
     }

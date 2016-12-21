@@ -1,3 +1,132 @@
+/*
+This is the Material Design theme for FullCalendar Weekly Agenda view
+Creation Date: Aug 19th 2015
+Author: Jacky Liang
+Version: FullCalendar 2.4.0
+Tested Using the Following FC Settings:
+    editable: false,
+    handleWindowResize: true,
+    weekends: false, // Hide weekends
+    defaultView: 'agendaWeek', // Only show week view
+    header: false, // Hide buttons/titles
+    minTime: '07:30:00', // Start time for the calendar
+    maxTime: '22:00:00', // End time for the calendar
+    columnFormat: {
+        week: 'ddd' // Only show day of the week names
+    },
+    displayEventTime: true,
+    allDayText: 'Online/TBD'
+Note: This has NOT been tested on Monthly or Daily views.
+Colors: Use the following - https://www.google.com/design/spec/style/color.html#color-color-palette
+        at the 700 level. An opacity of 0.65 is automatically applied to the
+        700 level colors to generate a soft and pleasing look.
+        Color were applied to each event using the following code:
+        events.push({
+            title: 'This is a Material Design event!',
+            start: 'someStartDate',
+            end: 'someEndDate',
+            color: '#C2185B'
+        });
+*/
+/* Remove that awful yellow color and border from today in Schedule */
+.fc-today {
+    background: #f4fbfa !important;
+    border: none !important;
+}
+
+/* Styling for each event from Schedule */
+.fc-time-grid-event.fc-v-event.fc-event {
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+    opacity: .65;
+    left: 5% !important;
+    right: 5% !important;
+}
+
+/* Bolds the name of the event and inherits the font size */
+.fc-event {
+    margin-left: 12px !important;
+    padding: 5px !important;
+    font-size: inherit !important;
+    font-weight: bold !important;
+    position: relative;
+    display: block;
+    line-height: 1.3;
+    border-radius: 0px;
+    border: 1px solid #1ca195;
+    background-color: #1ca195;
+}
+
+/* Remove the header border from Schedule */
+.fc td, .fc th {
+    border-width: 1px !important;
+    padding: 0 !important;
+    vertical-align: top !important;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+}
+
+.fc-event, .fc-event:hover, .ui-widget .fc-event {
+    color: #ddeeed;
+    text-decoration: none;
+}
+
+.fc button {
+    display: inline-block;
+    border-radius: 0px !important;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.fc-head-container {
+    border-top: 0px !important;
+}
+
+    /* Inherits background for each event from Schedule. */
+.fc-event .fc-bg {
+    z-index: 1 !important;
+    background: inherit !important;
+    opacity: .25 !important;
+}
+
+/* Normal font weight for the time in each event */
+.fc-time-grid-event .fc-time {
+    font-weight: normal !important;
+}
+
+/* Apply same opacity to all day events */
+.fc-ltr .fc-h-event.fc-not-end, .fc-rtl .fc-h-event.fc-not-start {
+    opacity: .65 !important;
+    margin-left: 12px !important;
+    padding: 5px !important;
+}
+
+/* Apply same opacity to all day events */
+.fc-day-grid-event.fc-h-event.fc-event.fc-not-start.fc-end {
+    opacity: .65 !important;
+    margin-left: 12px !important;
+    padding: 5px !important;
+}
+
+
 body {
     background: #fafafa;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

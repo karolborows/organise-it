@@ -36,4 +36,11 @@
         <span class="glyphicon glyphicon-pencil"></span>
         <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
     </button>
+
+    <button type="submit"
+            ui-sref="calendar-event.delete({id:vm.calendarEvent.id})"
+            class="btn btn-danger">
+        <span class="glyphicon glyphicon-remove-circle"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.delete"></span>
+    </button>
 </div>

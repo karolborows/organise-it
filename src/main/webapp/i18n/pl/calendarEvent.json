@@ -2,24 +2,24 @@
     "organiseItApp": {
         "calendarEvent" : {
             "home": {
-                "title": "Calendar Events",
-                "createLabel": "Dodaj Calendar Event",
-                "createOrEditLabel": "Dodaj lub edytuj: Calendar Event",
-                "search": "Search for Calendar Event"
+                "title": "Kalendarz",
+                "createLabel": "Dodaj wydarzenie",
+                "createOrEditLabel": "Dodaj lub edytuj wydarzenie",
+                "search": "Szukaj wydarzenia"
             },
-            "created": "A new Calendar Event is created with identifier {{ param }}",
-            "updated": "A Calendar Event is updated with identifier {{ param }}",
-            "deleted": "A Calendar Event is deleted with identifier {{ param }}",
+            "created": "Utworzono nowe wydarzenie o identyfikatorze {{ param }}",
+            "updated": "Zaktualizowano wydarzenie o identyfikatorze {{ param }}",
+            "deleted": "Usunięto wydarzenie o identyfikatorze {{ param }}",
             "delete": {
-                "question": "Czy na pewno chcesz usunąć Calendar Event {{ id }}?"
+                "question": "Czy na pewno chcesz usunąć to wydarzenie?"
             },
             "detail": {
-                "title": "Calendar Event"
+                "title": "Wydarzenie"
             },
-            "title": "Title",
-            "start": "Start",
-            "end": "End",
-            "description": "Description",
+            "title": "Tytuł",
+            "start": "Data rozpoczęcia",
+            "end": "Data zakończenia",
+            "description": "Opis",
             "owner": "Owner"
         }
     }

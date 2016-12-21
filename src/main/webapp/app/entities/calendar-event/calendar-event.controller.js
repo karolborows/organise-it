@@ -54,7 +54,7 @@
         /* alert on eventClick */
         $scope.alertOnEventClick = function(event, date, jsEvent, view){
             console.log(event);
-            $state.go('calendar-event-detail({id:event.id})');
+            $state.go("calendar-event-detail",{"id":event.id});
         };
         /* alert on Drop */
         $scope.alertOnDrop = function(event, delta, revertFunc, jsEvent, ui, view){
@@ -127,7 +127,7 @@
         /* config object */
         $scope.uiConfig = {
             calendar:{
-                height: 450,
+                height: 540,
                 editable: true,
                 header:{
                     left: 'title',
